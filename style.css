@@ -8,10 +8,12 @@
 
 .frame-activated1{ 
     transform: scale(1.25);
-    z-index: 3;
-    background-color: rgba(197, 223, 253, 0.5);
+    background-color: rgba(85, 113, 145, 0.5);
 
     margin-top: 1rem;
 }
 
-
+.frame-activated2{ 
+    transform: scale(1.15);
+    background-color: rgba(89, 114, 148, 0.5);
+}
