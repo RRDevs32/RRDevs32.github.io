@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather forecast sample</title>
+
+        <link rel="stylesheet" href="../bootstrap.css"></link>  
+        <link rel="stylesheet" href="../style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>
+            .activated-text{ opacity: 0; }
+            .newShow img{ width: 10rem; }
+        </style>
+        <!--Ícones feitos por <a href="https://www.flaticon.com/br/autores/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a>-->
+
+        <script>
+            $(document).ready(function () {
+                $(".unnactivated1").mouseenter(function () {
+                    $(this).addClass("frame-activated1");
+                    $(this).children(".activated-text").css("opacity", "100%");
+                });
+
+                $(".unnactivated1").mouseleave(function () {
+                    $(this).removeClass("frame-activated1")
+                    $(this).children(".activated-text").css("opacity", "0%");
+                });
+
+
+                $(".unnactivated2").mouseenter(function () {
+                    $(this).addClass("frame-activated2");
+                });
+
+                $(".unnactivated2").mouseleave(function () {
+                    $(this).removeClass("frame-activated2");
+                });
+            
+                $(".newShow").click(function () {
+                    location.href = "../news/index.html"
+                })
+            
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <div class="gradient text-center h-100">
+            <img src="../LogoMakr_4YtAXy.png" alt="">
+        </div>
+
+        <div class="container">
+            <div class="p-2 my-4 text-center weather">
+                <h3 class="display-3">The weather in New York</h3>
+                <div class="row">
+                    <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
+                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p>23°</p>
+                        <ul class="text-left activated-text t1">
+                            <li>Humidity: 23%</li>
+                            <li>Air: 12mph</li>
+                            <li>rain: 40%</li>
+                        </ul>
+                    </div>
+                    <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
+                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p>23°</p>
+                        <ul class="text-left activated-text t1">
+                            <li>Humidity: 23%</li>
+                            <li>Air: 12mph</li>
+                            <li>rain: 40%</li>
+                        </ul>
+                    </div>
+                    <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
+                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p>23°</p>
+                        <ul class="text-left activated-text t1">
+                            <li>Humidity: 23%</li>
+                            <li>Air: 12mph</li>
+                            <li>rain: 40%</li>
+                        </ul>
+                    </div>
+                    <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
+                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p>23°</p>
+                        <ul class="text-left activated-text t1">
+                            <li>Humidity: 23%</li>
+                            <li>Air: 12mph</li>
+                            <li>rain: 40%</li>
+                        </ul>
+                    </div>
+                    <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
+                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p>23°</p>
+                        <ul class="text-left activated-text t1">
+                            <li>Humidity: 23%</li>
+                            <li>Air: 12mph</li>
+                            <li>rain: 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="news p-2">
+                <h3>Trending around the world</h3>
+                <div class="row newShow px-5 py-2 my-3 unnactivated2 t1 border-top border-bottom border-secondary mx-5">
+                    <img class="img-fluid rounded mr-2 col"
+                        src="https://www.abc.net.au/cm/rimage/12724684-16x9-xlarge.jpg?v=2" alt="news1">
+                    <p class="lead mr-2 d-inline-block col">US President Donald Trump says he and Melania Trump have tested positive for
+                        COVID-19</p>
+                </div>
+                <div class="row newShow px-5 py-2 my-3 unnactivated2 t1 border-bottom border-secondary mx-5">
+                    <p class="lead col">Amazon fires: Jair Bolsonaro issues burning ban in Brazil</p>
+                    <img class="img-fluid rounded mr-2 col" src="https://www.dw.com/image/50222280_303.jpg" alt="news2">
+                </div>
+                <div class="row newShow px-5 py-2 my-3 unnactivated2 t1 border-bottom border-secondary mx-5">
+                    <img class="img-fluid rounded mr-2 col"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82d0dae4-8094-11ea-b437-a2f12268f8d1.jpg?crop=3975%2C2236%2C0%2C207&resize=1180"
+                        alt="news2">
+                    <p class="lead col">Amazon fires: Jair Bolsonaro issues burning ban in Brazil</p>
+                </div>
+                <div class="row newShow px-5 py-2 my-3 unnactivated2 t1 border-bottom border-secondary mx-5">
+                    <p class="lead col">Coronavirus: ‘Only 10% of Italians have developed antibodies’</p>
+                    <img class="img-fluid rounded mr-2 col"
+                        src="https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-us.s3.amazonaws.com%2F3f80e894-f1bd-11e9-ad1e-4367d8281195?fit=scale-down&source=next&width=700"
+                        alt="news2">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
