@@ -18,6 +18,12 @@
 
         <script>
             $(document).ready(function () {
+                $(".footerSecondary").slideToggle();
+
+                $(".footer").hover(function(){
+                    $(".footerSecondary").slideToggle();
+                })
+
                 $(".unnactivated1").mouseenter(function () {
                     $(this).addClass("frame-activated1");
                     $(this).children(".activated-text").css("opacity", "100%");
@@ -38,7 +44,7 @@
                 });
             
                 $(".newShow").click(function () {
-                    location.href = "../news/index.html"
+                    location.href = "../news/"
                 })
             
             });
@@ -49,6 +55,7 @@
     <body>
         <div class="gradient text-center h-100">
             <img src="../LogoMakr_4YtAXy.png" alt="">
+            <a class="d-block text-light" href="../contact/index.html">Contact us!</a>
         </div>
 
         <div class="container">
@@ -56,48 +63,53 @@
                 <h3 class="display-3">The weather in New York</h3>
                 <div class="row">
                     <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
-                        <img src="039-sun.svg" alt="sun" class="icon m-3">
+                        <p class="lead">Thursday</p>
+                        <img src="./011-cloudy.svg" alt="sun" class="icon m-3">
                         <p>23°</p>
                         <ul class="text-left activated-text t1">
                             <li>Humidity: 23%</li>
                             <li>Air: 12mph</li>
-                            <li>rain: 40%</li>
+                            <li>rain: 80%</li>
                         </ul>
                     </div>
                     <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
-                        <img src="039-sun.svg" alt="sun" class="icon m-3">
-                        <p>23°</p>
+                        <p class="lead">Friday</p>
+                        <img src="./039-sun.svg" alt="sun" class="icon m-3">
+                        <p>28°</p>
                         <ul class="text-left activated-text t1">
-                            <li>Humidity: 23%</li>
-                            <li>Air: 12mph</li>
-                            <li>rain: 40%</li>
+                            <li>Humidity: 32%</li>
+                            <li>Air: 7mph</li>
+                            <li>rain: 20%</li>
                         </ul>
                     </div>
                     <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
-                        <img src="039-sun.svg" alt="sun" class="icon m-3">
-                        <p>23°</p>
+                        <p class="lead">Saturday</p>
+                        <img src="./003-rainy.svg" alt="sun" class="icon m-3">
+                        <p>24°</p>
                         <ul class="text-left activated-text t1">
-                            <li>Humidity: 23%</li>
-                            <li>Air: 12mph</li>
-                            <li>rain: 40%</li>
+                            <li>Humidity: 30%</li>
+                            <li>Air: 11mph</li>
+                            <li>rain: 42%</li>
                         </ul>
                     </div>
                     <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
-                        <img src="039-sun.svg" alt="sun" class="icon m-3">
-                        <p>23°</p>
+                        <p class="lead">Sunday</p>
+                        <img src="./011-cloudy.svg" alt="sun" class="icon m-3">
+                        <p>29°</p>
                         <ul class="text-left activated-text t1">
-                            <li>Humidity: 23%</li>
-                            <li>Air: 12mph</li>
-                            <li>rain: 40%</li>
+                            <li>Humidity: 21%</li>
+                            <li>Air: 10mph</li>
+                            <li>rain: 13%</li>
                         </ul>
                     </div>
                     <div class="col border-top border-bottom py-4 weather-show unnactivated1 t1">
-                        <img src="039-sun.svg" alt="sun" class="icon m-3">
-                        <p>23°</p>
+                        <p class="lead">Tuesday</p>
+                        <img src="./039-sun.svg" alt="sun" class="icon m-3">
+                        <p>31°</p>
                         <ul class="text-left activated-text t1">
-                            <li>Humidity: 23%</li>
-                            <li>Air: 12mph</li>
-                            <li>rain: 40%</li>
+                            <li>Humidity: 13%</li>
+                            <li>Air: 4mph</li>
+                            <li>rain: 22%</li>
                         </ul>
                     </div>
                 </div>
@@ -128,6 +140,36 @@
                 </div>
             </div>
         </div>
-    </body>
 
+        <div class="w-100 footer text-center border-top" style="position: fixed; bottom: 0;">
+            <div class="footerSecondary bg-secondary ">
+                <div class="row pt-4">
+                    <div class="col container text-right mx-5">
+                        <div class="d-block my-3">
+                            <a href="#" class="border-bottom">Projeto 1</a>
+                        </div>
+    
+                        <div class="d-block mt-3">
+                            <a href="#" class="border-bottom">Projeto 2</a>
+                        </div>
+                    </div>
+    
+                    <div class="col container text-left mx-5">
+                        <div class="d-block my-3">
+                            <a href="#" class="border-bottom">Projeto 3</a>
+                        </div>
+                        
+                        <div class="d-block mt-3">
+                            <a href="#" class="border-bottom">Projeto 4</a>
+                        </div>
+                    </div>
+                </div>
+                <small class="text-muted mb-1">Created my free logo at LogoMakr.com</small><br />
+                <small class="text-muted mb-1">https://www.flaticon.com/br/autores/iconixar</small>
+            </div>
+            <div class="w-100 bg-secondary footerMain py-1">
+                More Projects
+            </div>
+        </div>
+    </body>
 </html>
